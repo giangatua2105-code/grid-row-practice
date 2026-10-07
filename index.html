@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid Row</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Thực hành thuộc tính <code>grid-row</code></h1>
+
+    <!-- =============================================
+         VÍ DỤ 1: grid-row: 1 / 3
+         Ô 1 bắt đầu từ hàng 1, kết thúc ở hàng 3
+         → Chiếm 2 hàng (hàng 1 và 2)
+         ============================================= -->
+    <section>
+      <h2>Ví dụ 1: <code>grid-row: 1 / 3</code></h2>
+      <p class="note">Ô 1 chiếm 2 hàng đầu tiên (hàng 1 và 2)</p>
+
+      <div class="grid-container grid-1">
+        <div class="item item1">Ô 1<br /><small>1 / 3</small></div>
+        <div class="item">Ô 2</div>
+        <div class="item">Ô 3</div>
+        <div class="item">Ô 4</div>
+        <div class="item">Ô 5</div>
+        <div class="item">Ô 6</div>
+      </div>
+    </section>
+
+    <!-- =============================================
+         VÍ DỤ 2: grid-row: 2 / 4
+         Ô 1 bắt đầu từ hàng 2, kết thúc ở hàng 4
+         → Chiếm 2 hàng (hàng 2 và 3)
+         ============================================= -->
+    <section>
+      <h2>Ví dụ 2: <code>grid-row: 2 / 4</code></h2>
+      <p class="note">Ô 1 chiếm hàng 2 và 3 (bắt đầu từ hàng 2)</p>
+
+      <div class="grid-container grid-2">
+        <div class="item item1">Ô 1<br /><small>2 / 4</small></div>
+        <div class="item">Ô 2</div>
+        <div class="item">Ô 3</div>
+        <div class="item">Ô 4</div>
+        <div class="item">Ô 5</div>
+        <div class="item">Ô 6</div>
+      </div>
+    </section>
+
+    <!-- =============================================
+         VÍ DỤ 3: grid-row: span 2
+         Ô 1 tự động chiếm 2 hàng kể từ vị trí hiện tại
+         ============================================= -->
+    <section>
+      <h2>Ví dụ 3: <code>grid-row: span 2</code></h2>
+      <p class="note">
+        Ô 1 chiếm 2 hàng tự động (không chỉ định vị trí bắt đầu)
+      </p>
+
+      <div class="grid-container grid-3">
+        <div class="item item1">Ô 1<br /><small>span 2</small></div>
+        <div class="item">Ô 2</div>
+        <div class="item">Ô 3</div>
+        <div class="item">Ô 4</div>
+        <div class="item">Ô 5</div>
+        <div class="item">Ô 6</div>
+      </div>
+    </section>
+  </body>
+</html>
